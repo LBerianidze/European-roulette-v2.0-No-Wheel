@@ -1,0 +1,204 @@
+﻿<Window x:Class="European_roulette_v2._0.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:European_roulette_v2._0" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="Европейская рулетка" Width="938" Height="587" Closing="MainWindow_OnClosing" Icon="favicon.ico" Loaded="MainWindow_OnLoaded" ResizeMode="CanMinimize" Topmost="True"
+        WindowStartupLocation="CenterScreen" mc:Ignorable="d">
+    <Window.Resources>
+        <Style x:Key="WhiteButton" TargetType="Button">
+            <Setter Property="Background" Value="White" />
+            <Setter Property="FontSize" Value="17" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Style.Triggers>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="Background" Value="#33FF0000" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
+    <Grid>
+        <Button x:Name="id0" Width="55" Height="135" Margin="4,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Foreground="#FF009C00"
+                Style="{DynamicResource WhiteButton}">
+            0
+        </Button>
+        <Button x:Name="id3" Width="55" Height="45" Margin="59,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="3" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id2" Width="55" Height="45" Margin="59,46,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="2"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id1" Width="55" Height="45" Margin="59,91,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="1" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id6" Width="55" Height="45" Margin="114,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="6"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id5" Width="55" Height="45" Margin="114,46,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="5" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id4" Width="55" Height="45" Margin="114,91,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="4"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id9" Width="55" Height="45" Margin="169,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="9" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id8" Width="55" Height="45" Margin="169,46,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="8"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id7" Width="55" Height="45" Margin="169,91,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="7" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id12" Width="55" Height="45" Margin="224,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="12" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id11" Width="55" Height="45" Margin="224,46,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="11"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id10" Width="55" Height="45" Margin="224,91,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="10"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id15" Width="55" Height="45" Margin="279,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="15"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id14" Width="55" Height="45" Margin="279,46,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="14" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id13" Width="55" Height="45" Margin="279,91,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="13"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id18" Width="55" Height="45" Margin="334,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="18" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id17" Width="55" Height="45" Margin="334,46,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="17"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id16" Width="55" Height="45" Margin="334,91,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="16" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id21" Width="55" Height="45" Margin="389,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="21" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id20" Width="55" Height="45" Margin="389,46,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="20"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id19" Width="55" Height="45" Margin="389,91,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="19" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id24" Width="55" Height="45" Margin="444,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="24"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id23" Width="55" Height="45" Margin="444,46,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="23" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id22" Width="55" Height="45" Margin="444,91,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="22"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id27" Width="55" Height="45" Margin="499,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="27" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id26" Width="55" Height="45" Margin="499,46,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="26"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id25" Width="55" Height="45" Margin="499,91,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="25" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id31" Width="55" Height="45" Margin="554,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="30" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id29" Width="55" Height="45" Margin="554,46,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="29"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id28" Width="55" Height="45" Margin="554,91,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="28"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id33" Width="55" Height="45" Margin="609,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="33"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id32" Width="55" Height="45" Margin="609,46,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="32" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id30" Width="55" Height="45" Margin="609,91,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="31"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id36" Width="55" Height="45" Margin="664,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="36" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id35" Width="55" Height="45" Margin="664,46,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="35"
+                Style="{DynamicResource WhiteButton}" />
+        <Button x:Name="id34" Width="55" Height="45" Margin="664,91,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Id_OnClick" Content="34" Foreground="#FFAA0000"
+                Style="{DynamicResource WhiteButton}" />
+        <TextBox x:Name="numberTextBox" Width="195" Height="215" Margin="724,1,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="13" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" />
+        <Border Width="567" Height="135" Margin="4,138,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="1">
+            <WindowsFormsHost Name="droppedSixLinesGridContainer" />
+        </Border>
+        <Border Width="143" Height="71" Margin="576,138,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0">
+            <DataGrid Name="part1SummaryDataGrid" AutoGenerateColumns="False" HeadersVisibility="None" HorizontalScrollBarVisibility="Disabled" SelectionUnit="Cell" VerticalScrollBarVisibility="Disabled">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding [0]}" />
+                    <DataGridTextColumn Binding="{Binding [1]}" />
+                    <DataGridTextColumn Binding="{Binding [2]}" />
+                    <DataGridTextColumn Binding="{Binding [3]}" />
+                    <DataGridTextColumn Binding="{Binding [4]}" />
+
+                </DataGrid.Columns>
+                <DataGrid.CellStyle>
+                    <Style TargetType="DataGridCell">
+                        <Setter Property="Width" Value="28.3" />
+                        <Setter Property="Height" Value="22.3" />
+                        <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                    </Style>
+                </DataGrid.CellStyle>
+            </DataGrid>
+        </Border>
+        <Border Width="86" Height="71" Margin="576,276,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0">
+            <DataGrid Name="favsSummaryDataGrid" AutoGenerateColumns="False" HeadersVisibility="None" HorizontalScrollBarVisibility="Disabled" SelectionUnit="Cell" VerticalScrollBarVisibility="Disabled">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding [0]}" />
+                    <DataGridTextColumn Binding="{Binding [1]}" />
+                    <DataGridTextColumn Binding="{Binding [2]}" />
+
+                </DataGrid.Columns>
+                <DataGrid.CellStyle>
+                    <Style TargetType="DataGridCell">
+                        <Setter Property="Width" Value="28.3" />
+                        <Setter Property="Height" Value="22.3" />
+                        <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                    </Style>
+                </DataGrid.CellStyle>
+            </DataGrid>
+        </Border>
+        <Border Width="567" Height="130" Margin="4,276,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="1">
+            <WindowsFormsHost Name="favouritesGridContainer" />
+        </Border>
+        <Button Width="85" Height="25" Margin="724,220,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="CanceActionButton_Click" Content="Отменить" />
+        <Button Width="85" Height="25" Margin="724,247,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="SaveNumberButton_Click" Content="Сохранить" />
+        <Button Width="85" Height="25" Margin="724,274,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="LoadNumberButton_Click" Content="Загрузить" />
+        <TextBox x:Name="successRate" Width="49" Height="32" Margin="814,219,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" FontSize="16" Text="50%" TextAlignment="Center" />
+        <Border Width="70" Height="43" Margin="814,256,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FF939393" BorderThickness="1">
+            <StackPanel>
+                <Border BorderBrush="#FF939393" BorderThickness="0,0,0,1">
+                    <TextBlock x:Name="sum" FontSize="16" Text="0" TextAlignment="Center" />
+                </Border>
+                <TextBlock Name="start_timer" FontSize="16" Text="00:00" TextAlignment="Center" />
+            </StackPanel>
+        </Border>
+        <Border Width="915" Height="66" Margin="4,411,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="1">
+            <Grid>
+                <Button Name="placeBetButton" Width="85" Height="25" Margin="2,2,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="PlaceBetButton_OnClick" Content="Ставка №" />
+                <Button Name="resetBetButton" Width="83" Height="25" Margin="91,2,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ResetBetButton_OnClick" Content="Сбросить" />
+                <Button Name="stopBetButton" Width="35" Height="28" Margin="2,31,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="StopBetButton_OnClick" Content="▌ ▌" />
+                <Button Name="resumeBetButton" Width="35" Height="28" Margin="44,31,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ResumeBetButton_OnClick" Content="▶" FontSize="18" />
+                <Button Name="moveBackBetButton" Width="35" Height="28" Margin="85,31,0,0" Padding="0,-4,0,4" HorizontalAlignment="Left" VerticalAlignment="Top" Click="MoveBackBetButton_OnClick" Content="≪" FontSize="23" />
+                <Button Name="moveNextBetButton" Width="35" Height="28" Margin="128,31,0,0" Padding="0,-4,0,4" HorizontalAlignment="Left" VerticalAlignment="Top" Click="MoveNextBetButton_OnClick" Content="≫" FontSize="23" />
+                <DataGrid Name="betGrid" Height="64" Margin="176,0,0,0" VerticalAlignment="Top" AutoGenerateColumns="False" HeadersVisibility="None" HorizontalScrollBarVisibility="Visible" IsSynchronizedWithCurrentItem="True"
+                          SelectionChanged="betGrid_SelectionChanged" SelectionUnit="Cell" VerticalScrollBarVisibility="Disabled">
+                    <DataGrid.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Width" Value="28.3" />
+                            <Setter Property="Height" Value="22.4" />
+                            <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#4CFF0000" />
+                                    <Setter Property="BorderThickness" Value="0" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGrid.CellStyle>
+                </DataGrid>
+            </Grid>
+        </Border>
+        <Border Width="915" Height="66" Margin="4,480,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="1">
+            <Grid>
+                <Button x:Name="placeBetButton1" Width="85" Height="25" Margin="2,2,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="PlaceBetButton2_OnClick" Content="Ставка №" />
+                <Button x:Name="resetBetButton1" Width="83" Height="25" Margin="91,2,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ResetBetButton2_OnClick" Content="Сбросить" />
+                <Button x:Name="stopBetButton1" Width="35" Height="28" Margin="2,31,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="StopBetButton2_OnClick" Content="▌ ▌" />
+                <Button x:Name="resumeBetButton1" Width="35" Height="28" Margin="44,31,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ResumeBetButton2_OnClick" Content="▶" FontSize="18" />
+                <Button x:Name="moveBackBetButton1" Width="35" Height="28" Margin="85,31,0,0" Padding="0,-4,0,4" HorizontalAlignment="Left" VerticalAlignment="Top" Click="MoveBackBetButton2_OnClick" Content="≪" FontSize="23" />
+                <Button x:Name="moveNextBetButton1" Width="35" Height="28" Margin="128,31,0,0" Padding="0,-4,0,4" HorizontalAlignment="Left" VerticalAlignment="Top" Click="MoveNextBetButton2_OnClick" Content="≫"
+                        FontSize="23" />
+                <DataGrid Name="betGrid2" Height="64" Margin="176,0,0,0" VerticalAlignment="Top" AutoGenerateColumns="False" HeadersVisibility="None" HorizontalScrollBarVisibility="Visible" IsSynchronizedWithCurrentItem="True"
+                          SelectionChanged="betGrid_SelectionChanged" SelectionUnit="Cell" VerticalScrollBarVisibility="Disabled">
+                    <DataGrid.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Width" Value="28.3" />
+                            <Setter Property="Height" Value="22.4" />
+                            <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#4CFF0000" />
+                                    <Setter Property="BorderThickness" Value="0" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGrid.CellStyle>
+                </DataGrid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
